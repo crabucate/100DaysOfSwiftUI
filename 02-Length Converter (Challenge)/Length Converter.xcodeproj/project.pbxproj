@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DC0F0F6A259DC1D600EDE08D /* Length_ConverterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0F0F69259DC1D600EDE08D /* Length_ConverterApp.swift */; };
-		DC0F0F6C259DC1D600EDE08D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0F0F6B259DC1D600EDE08D /* ContentView.swift */; };
+		DC0F0F6C259DC1D600EDE08D /* UnitConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0F0F6B259DC1D600EDE08D /* UnitConverter.swift */; };
 		DC0F0F6E259DC1D600EDE08D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC0F0F6D259DC1D600EDE08D /* Assets.xcassets */; };
 		DC0F0F71259DC1D600EDE08D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC0F0F70259DC1D600EDE08D /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		DC0F0F66259DC1D600EDE08D /* Length Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Length Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC0F0F69259DC1D600EDE08D /* Length_ConverterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Length_ConverterApp.swift; sourceTree = "<group>"; };
-		DC0F0F6B259DC1D600EDE08D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DC0F0F6B259DC1D600EDE08D /* UnitConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitConverter.swift; sourceTree = "<group>"; };
 		DC0F0F6D259DC1D600EDE08D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC0F0F70259DC1D600EDE08D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DC0F0F72259DC1D600EDE08D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				DC0F0F69259DC1D600EDE08D /* Length_ConverterApp.swift */,
-				DC0F0F6B259DC1D600EDE08D /* ContentView.swift */,
+				DC0F0F6B259DC1D600EDE08D /* UnitConverter.swift */,
 				DC0F0F6D259DC1D600EDE08D /* Assets.xcassets */,
 				DC0F0F72259DC1D600EDE08D /* Info.plist */,
 				DC0F0F6F259DC1D600EDE08D /* Preview Content */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC0F0F6C259DC1D600EDE08D /* ContentView.swift in Sources */,
+				DC0F0F6C259DC1D600EDE08D /* UnitConverter.swift in Sources */,
 				DC0F0F6A259DC1D600EDE08D /* Length_ConverterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
