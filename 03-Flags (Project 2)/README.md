@@ -2,4 +2,4 @@
 
 A flag guessing game.
 
-![](images/flags.gif)
+![](images/flagsChallenges.gif)
