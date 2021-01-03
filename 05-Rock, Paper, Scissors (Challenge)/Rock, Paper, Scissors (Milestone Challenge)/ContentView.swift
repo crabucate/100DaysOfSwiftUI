@@ -44,28 +44,26 @@ struct ContentView: View {
     
     func evaluate(selected: Int) {
         if win {
-            if selected == 2 && selectedImageIndex == 0 {
-                score+=1
-            }
-            else if selected > selectedImageIndex {
-                score+=1
-            } else {
-                score-=1
+            switch selectedImageIndex {
+                case 2: if selected == 0 { score+=1 } else { score-=1 }
+                case 1: if selected == 2 { score+=1 } else { score-=1 }
+                case 0: if selected == 1 { score+=1 } else { score-=1 }
+            default:
+                print("Ha")
             }
         } else {
-            if selected == 2 && selectedImageIndex == 0 {
-                score-=1
-            }
-            else if selected > selectedImageIndex {
-                score-=1
-            } else {
-                score+=1
-            }
+            switch selectedImageIndex {
+                case 2: if selected == 0 { score-=1 } else { score+=1 }
+                case 1: if selected == 2 { score-=1 } else { score+=1 }
+                case 0: if selected == 1 { score-=1 } else { score+=1 }
+            default:
+                print("Ha")
         }
         
         win = Bool.random()
         selectedImageIndex = Int.random(in: 0..<3)
     }
+}
 }
 
 struct SymbolView: View {
