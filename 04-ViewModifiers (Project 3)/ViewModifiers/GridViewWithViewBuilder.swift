@@ -10,11 +10,10 @@ import SwiftUI
 struct GridViewWithViewBuilder: View {
     var body: some View {
         VStack {
+            // you get an implicit HStack because of the viewbuilder init
             GridStack(rows: 4, columns: 4) { row, col in
-                VStack {
                     Image(systemName: "\(row * 4 + col).circle")
                     Text("R\(row) C\(col)")
-                }
                 .frame(width: 50, height: 50, alignment: .center)
                 .background(Color.gray)
                 .padding()
