@@ -38,11 +38,7 @@ struct ContentView: View {
                     Button(action: {
                         self.flagTapped(number)
                     }) {
-                        Image(self.countries[number])
-                            .renderingMode(.original)
-                            .clipShape(Capsule())
-                            .overlay(Capsule().stroke(Color.black, lineWidth: 1))
-                            .shadow(color: .black, radius: 2)
+                        FlagImage(country: self.countries[number])
                     }
                 }
                 
@@ -58,6 +54,22 @@ struct ContentView: View {
             Alert(title: Text(scoreTitle), message: Text(scoreMessage), dismissButton: .default(Text("Continue")) {
                 self.askQuestion()
             })
+        }
+    }
+    
+    
+    // Day 24: Go back to project 2 and create a FlagImage() view that renders one flag image using the specific set of modifiers we had.
+    
+    struct FlagImage: View {
+        
+        let country: String
+        
+        var body: some View {
+            Image(country)
+                .renderingMode(.original)
+                .clipShape(Capsule())
+                .overlay(Capsule().stroke(Color.black, lineWidth: 1))
+                .shadow(color: .black, radius: 2)
         }
     }
     
