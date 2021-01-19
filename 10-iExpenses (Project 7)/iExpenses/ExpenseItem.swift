@@ -8,8 +8,15 @@
 import Foundation
 
 struct ExpenseItem: Identifiable, Codable {
-    var id = UUID()
-    let name: String
-    let type: String
-    let amount: Int
-}
+    let id: UUID
+        let name: String
+        let type: String
+        let amount: Int
+
+        init(id: UUID = UUID(), name: String, type: String, amount: Int) {
+            self.id = id
+            self.name = name
+            self.type = type
+            self.amount = amount
+        }
+    }

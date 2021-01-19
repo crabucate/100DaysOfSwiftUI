@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 struct ContentView: View {
     
     @ObservedObject var expenses = Expenses()
@@ -19,6 +17,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
+                
                 ForEach(expenses.items) { item in
                     HStack {
                             VStack(alignment: .leading) {
@@ -31,17 +30,21 @@ struct ContentView: View {
                                 .foregroundColor(item.amount <= 10 ? .green : item.amount <= 100 && item.amount > 10 ? .yellow : .red)
                         }
                 } .onDelete(perform: removeItems)
-            } .sheet(isPresented: $showingAddExpense) {
-                AddView(expenses: self.expenses)
-            } .navigationBarTitle(Text("iExpense"))
-            .navigationBarItems(leading: EditButton(),
-                                trailing:
+            }   .navigationBarTitle(Text("iExpense"))
+                .navigationBarItems(leading: EditButton(),
+                                    trailing:
                                     Button(action: {
                                         self.showingAddExpense = true
                                     }) {
                                         Image(systemName: "plus")
                                             .font(.title)
                                     })
+            
+            
+            .sheet(isPresented: $showingAddExpense) {
+                AddView(expenses: self.expenses)
+                
+            }
         }
     }
     
