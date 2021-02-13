@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		DC34007B25D26532003EDA6F /* FriendFaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34007A25D26532003EDA6F /* FriendFaceApp.swift */; };
-		DC34007D25D26532003EDA6F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34007C25D26532003EDA6F /* ContentView.swift */; };
+		DC34007D25D26532003EDA6F /* FriendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34007C25D26532003EDA6F /* FriendList.swift */; };
 		DC34007F25D26533003EDA6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC34007E25D26533003EDA6F /* Assets.xcassets */; };
 		DC34008225D26533003EDA6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC34008125D26533003EDA6F /* Preview Assets.xcassets */; };
+		DC74F0C325D3DDB9008CA510 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC74F0C225D3DDB9008CA510 /* User.swift */; };
+		DC74F0C625D3DE59008CA510 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC74F0C525D3DE59008CA510 /* NetworkManager.swift */; };
+		DCAE308525D6E61B006A731C /* FriendDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAE308425D6E61B006A731C /* FriendDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DC34007725D26532003EDA6F /* FriendFace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendFace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC34007A25D26532003EDA6F /* FriendFaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFaceApp.swift; sourceTree = "<group>"; };
-		DC34007C25D26532003EDA6F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DC34007C25D26532003EDA6F /* FriendList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendList.swift; sourceTree = "<group>"; };
 		DC34007E25D26533003EDA6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC34008125D26533003EDA6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DC34008325D26533003EDA6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC74F0C225D3DDB9008CA510 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DC74F0C525D3DE59008CA510 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DCAE308425D6E61B006A731C /* FriendDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				DC34007A25D26532003EDA6F /* FriendFaceApp.swift */,
-				DC34007C25D26532003EDA6F /* ContentView.swift */,
+				DC74F0C225D3DDB9008CA510 /* User.swift */,
+				DC34007C25D26532003EDA6F /* FriendList.swift */,
+				DCAE308425D6E61B006A731C /* FriendDetail.swift */,
+				DC74F0C525D3DE59008CA510 /* NetworkManager.swift */,
 				DC34007E25D26533003EDA6F /* Assets.xcassets */,
 				DC34008325D26533003EDA6F /* Info.plist */,
 				DC34008025D26533003EDA6F /* Preview Content */,
@@ -138,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC34007D25D26532003EDA6F /* ContentView.swift in Sources */,
+				DC74F0C625D3DE59008CA510 /* NetworkManager.swift in Sources */,
+				DC34007D25D26532003EDA6F /* FriendList.swift in Sources */,
 				DC34007B25D26532003EDA6F /* FriendFaceApp.swift in Sources */,
+				DC74F0C325D3DDB9008CA510 /* User.swift in Sources */,
+				DCAE308525D6E61B006A731C /* FriendDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
