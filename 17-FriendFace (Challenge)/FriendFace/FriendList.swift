@@ -11,6 +11,8 @@ struct FriendList: View {
     
     @State private var users = [User]()
     
+    @Environment(\.managedObjectContext) private var moc
+    
     var body: some View {
         NavigationView {
             List {
@@ -27,7 +29,7 @@ struct FriendList: View {
     }
     
     func getUsers() {
-        NetworkManager.shared.getUsers { result in
+        DataManager.shared.getUsers { result in
             switch result {
             case .success(let users):
                 self.users = users

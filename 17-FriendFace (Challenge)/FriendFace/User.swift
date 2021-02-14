@@ -17,7 +17,6 @@ struct User: Codable, Identifiable {
     let address: String
     let about: String
     let registered: String
-    let tags: [String]
     let friends: [Friend]
     
     struct Friend: Codable, Identifiable, Hashable {

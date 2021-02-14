@@ -12,7 +12,9 @@
 		DC34007F25D26533003EDA6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC34007E25D26533003EDA6F /* Assets.xcassets */; };
 		DC34008225D26533003EDA6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC34008125D26533003EDA6F /* Preview Assets.xcassets */; };
 		DC74F0C325D3DDB9008CA510 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC74F0C225D3DDB9008CA510 /* User.swift */; };
-		DC74F0C625D3DE59008CA510 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC74F0C525D3DE59008CA510 /* NetworkManager.swift */; };
+		DC74F0C625D3DE59008CA510 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC74F0C525D3DE59008CA510 /* DataManager.swift */; };
+		DC87AE7125D81C4600F7BF5E /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DC87AE6F25D81C4600F7BF5E /* CoreDataModel.xcdatamodeld */; };
+		DC87AE7825D860BE00F7BF5E /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC87AE7725D860BE00F7BF5E /* Persistence.swift */; };
 		DCAE308525D6E61B006A731C /* FriendDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAE308425D6E61B006A731C /* FriendDetail.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +26,9 @@
 		DC34008125D26533003EDA6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DC34008325D26533003EDA6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC74F0C225D3DDB9008CA510 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		DC74F0C525D3DE59008CA510 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DC74F0C525D3DE59008CA510 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		DC87AE7025D81C4600F7BF5E /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		DC87AE7725D860BE00F7BF5E /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Persistence.swift; path = "../../16-CoreData Project (Project 12)/CoreData Project/Persistence.swift"; sourceTree = "<group>"; };
 		DCAE308425D6E61B006A731C /* FriendDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,10 +66,12 @@
 				DC74F0C225D3DDB9008CA510 /* User.swift */,
 				DC34007C25D26532003EDA6F /* FriendList.swift */,
 				DCAE308425D6E61B006A731C /* FriendDetail.swift */,
-				DC74F0C525D3DE59008CA510 /* NetworkManager.swift */,
+				DC74F0C525D3DE59008CA510 /* DataManager.swift */,
+				DC87AE7725D860BE00F7BF5E /* Persistence.swift */,
 				DC34007E25D26533003EDA6F /* Assets.xcassets */,
 				DC34008325D26533003EDA6F /* Info.plist */,
 				DC34008025D26533003EDA6F /* Preview Content */,
+				DC87AE6F25D81C4600F7BF5E /* CoreDataModel.xcdatamodeld */,
 			);
 			path = FriendFace;
 			sourceTree = "<group>";
@@ -147,8 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC74F0C625D3DE59008CA510 /* NetworkManager.swift in Sources */,
+				DC74F0C625D3DE59008CA510 /* DataManager.swift in Sources */,
 				DC34007D25D26532003EDA6F /* FriendList.swift in Sources */,
+				DC87AE7125D81C4600F7BF5E /* CoreDataModel.xcdatamodeld in Sources */,
+				DC87AE7825D860BE00F7BF5E /* Persistence.swift in Sources */,
 				DC34007B25D26532003EDA6F /* FriendFaceApp.swift in Sources */,
 				DC74F0C325D3DDB9008CA510 /* User.swift in Sources */,
 				DCAE308525D6E61B006A731C /* FriendDetail.swift in Sources */,
@@ -340,6 +348,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DC87AE6F25D81C4600F7BF5E /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DC87AE7025D81C4600F7BF5E /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = DC87AE7025D81C4600F7BF5E /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DC34006F25D26532003EDA6F /* Project object */;
 }

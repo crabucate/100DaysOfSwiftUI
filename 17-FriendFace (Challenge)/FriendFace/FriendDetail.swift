@@ -49,12 +49,6 @@ struct FriendDetail: View {
                         Text(user.registered)
                     }
                     
-                    Section(header: Text("Tags")) {
-                        ForEach(user.tags, id: \.self) { tag in
-                            Text(tag)
-                        }
-                    }
-                    
                     Section(header: Text("Friends")) {
                         
                         ForEach(user.friends, id: \.self) { friend in
@@ -76,6 +70,6 @@ struct FriendDetail: View {
 
 struct FriendDetail_Previews: PreviewProvider {
     static var previews: some View {
-        FriendDetail(users: .constant([User]()), user: User(id: "DummyID", isActive: true, name: "Dummy Name", age: 21, company: "Rainbow Company", email: "xxx@gmx.net", address: "Schwanseestr. 8", about: "Meet me at the bar.", registered: "2010-09", tags: ["Power Rangers", "Snoopy"], friends: [User.Friend(id: "", name: "")]))
+        FriendDetail(users: .constant([User]()), user: User(id: "DummyID", isActive: true, name: "Dummy Name", age: 21, company: "Rainbow Company", email: "xxx@gmx.net", address: "Schwanseestr. 8", about: "Meet me at the bar.", registered: "2010-09", friends: [User.Friend(id: "", name: "")]))
     }
 }
