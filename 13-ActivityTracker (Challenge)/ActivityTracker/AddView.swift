@@ -24,7 +24,7 @@ struct AddView: View {
                 Button {
                     let newItem = Activity(title: title, description: description)
                     activities.items.append(newItem)
-                    dpresentationMode.wrappedValue.dismiss()
+                    presentationMode.wrappedValue.dismiss()
                     
                 } label: {
                     ZStack {

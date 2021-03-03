@@ -35,13 +35,19 @@ struct ContentView: View {
                 AddView(expenses: self.expenses)
             }
             .navigationBarTitle("iExpense")
-            .navigationBarItems(trailing:
-                Button(action: {
-                    self.showingAddExpense = true
-                }) {
-                    Image(systemName: "plus")
-                }
-            )
+            .toolbar {
+                            ToolbarItem(placement: ToolbarItemPlacement.navigationBarLeading) {
+                                EditButton()
+                            }
+
+                            ToolbarItem {
+                                Button(action: {
+                                    self.showingAddExpense = true
+                                }) {
+                                    Image(systemName: "plus")
+                                }
+                            }
+                        }
         }
     }
     
