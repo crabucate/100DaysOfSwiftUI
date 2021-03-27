@@ -15,7 +15,7 @@
 		DC4D2E8C25B762AD00C85AE7 /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = DC4D2E8B25B762AD00C85AE7 /* missions.json */; };
 		DC4D2E8F25B762E000C85AE7 /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4D2E8E25B762E000C85AE7 /* Astronaut.swift */; };
 		DC4D2E9225B7633400C85AE7 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4D2E9125B7633400C85AE7 /* Bundle-Decodable.swift */; };
-		DC4D2E9625B7647F00C85AE7 /* Missions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4D2E9525B7647F00C85AE7 /* Missions.swift */; };
+		DC4D2E9625B7647F00C85AE7 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4D2E9525B7647F00C85AE7 /* Mission.swift */; };
 		DC4D2E9A25B76A2900C85AE7 /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4D2E9925B76A2900C85AE7 /* MissionView.swift */; };
 		DC4D2E9E25B76CDA00C85AE7 /* AstronautView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4D2E9D25B76CDA00C85AE7 /* AstronautView.swift */; };
 /* End PBXBuildFile section */
@@ -31,7 +31,7 @@
 		DC4D2E8B25B762AD00C85AE7 /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
 		DC4D2E8E25B762E000C85AE7 /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
 		DC4D2E9125B7633400C85AE7 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
-		DC4D2E9525B7647F00C85AE7 /* Missions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Missions.swift; sourceTree = "<group>"; };
+		DC4D2E9525B7647F00C85AE7 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 		DC4D2E9925B76A2900C85AE7 /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
 		DC4D2E9D25B76CDA00C85AE7 /* AstronautView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,7 +69,7 @@
 				DC4D2E9125B7633400C85AE7 /* Bundle-Decodable.swift */,
 				DC35564125B5CF14002D51B1 /* MoonshotApp.swift */,
 				DC4D2E8E25B762E000C85AE7 /* Astronaut.swift */,
-				DC4D2E9525B7647F00C85AE7 /* Missions.swift */,
+				DC4D2E9525B7647F00C85AE7 /* Mission.swift */,
 				DC35564325B5CF14002D51B1 /* ContentView.swift */,
 				DC4D2E9925B76A2900C85AE7 /* MissionView.swift */,
 				DC4D2E9D25B76CDA00C85AE7 /* AstronautView.swift */,
@@ -164,7 +164,7 @@
 				DC4D2E9E25B76CDA00C85AE7 /* AstronautView.swift in Sources */,
 				DC4D2E8F25B762E000C85AE7 /* Astronaut.swift in Sources */,
 				DC35564425B5CF14002D51B1 /* ContentView.swift in Sources */,
-				DC4D2E9625B7647F00C85AE7 /* Missions.swift in Sources */,
+				DC4D2E9625B7647F00C85AE7 /* Mission.swift in Sources */,
 				DC35564225B5CF14002D51B1 /* MoonshotApp.swift in Sources */,
 				DC4D2E9225B7633400C85AE7 /* Bundle-Decodable.swift in Sources */,
 				DC4D2E9A25B76A2900C85AE7 /* MissionView.swift in Sources */,
