@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct AddView: View {
 
@@ -15,6 +16,10 @@ struct AddView: View {
     @State private var name: String = ""
     @State private var showPicker = false
     @Binding var isPresented: Bool
+
+    let locationFetcher = LocationFetcher()
+
+    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
 
     var body: some View {
         NavigationView {
@@ -36,9 +41,38 @@ struct AddView: View {
                             showPicker = true
                         }
                 }
-                Form {
+
                     TextField("Name", text: $name)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .font(.largeTitle)
+                        .padding()
+                ZStack {
+                    Map(coordinateRegion: $region, showsUserLocation: true, userTrackingMode: .none)
+                    Circle()
+                        .fill(Color.blue)
+                        .opacity(0.3)
+                        .frame(width: 32, height: 32)
                 }
+                .onAppear(perform: {
+                    locationFetcher.start()
+                    if let lastRegion = locationFetcher.lastKnownLocation {
+                        region = MKCoordinateRegion(center: lastRegion, span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
+                    } else {
+                        print("No region")
+                    }
+
+                })
+
+                Text("\(region.center.latitude), \(region.center.longitude)")
+                    .onTapGesture {
+
+                        locationFetcher.start()
+                        if let lastRegion = locationFetcher.lastKnownLocation {
+                            region = MKCoordinateRegion(center: lastRegion, span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
+                        } else {
+                            print("No region")
+                        }
+                    }
             }
             .navigationTitle("Add Someone")
             .sheet(isPresented: $showPicker, content: {
@@ -55,7 +89,11 @@ struct AddView: View {
                         } else {
                             print("No image picked")
                         }
-                        let newPerson = Person(id: UUID(), name: name, imageUUID: imageID)
+
+                        let latitude = region.center.latitude
+                        let longitude = region.center.longitude
+                       
+                        let newPerson = Person(id: UUID(), name: name, imageUUID: imageID, latitude: latitude, longitude: longitude)
 
                         personStore.persons.append(newPerson)
                         personStore.persons.sort()
@@ -75,6 +113,19 @@ struct AddView: View {
                 }
             }
         }
+    }
+}
+
+struct PlusButton: View {
+    var body: some View {
+        Image(systemName: "plus")
+            .padding()
+            .background(Color.black.opacity(0.75))
+            .foregroundColor(.white)
+            .font(.title)
+            .edgesIgnoringSafeArea(.all)
+            .clipShape(Circle())
+            .padding()
     }
 }
 

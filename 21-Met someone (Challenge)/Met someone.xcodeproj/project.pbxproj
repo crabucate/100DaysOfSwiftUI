@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DC9BFA862615C8190057113F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9BFA852615C8190057113F /* DetailView.swift */; };
+		DC9BFA8A261715F20057113F /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC9BFA89261715F20057113F /* LocationFetcher.swift */; };
 		DCCEE872260F57F8000ECFCB /* Met_someoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEE871260F57F8000ECFCB /* Met_someoneApp.swift */; };
 		DCCEE874260F57F8000ECFCB /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCEE873260F57F8000ECFCB /* ListView.swift */; };
 		DCCEE876260F57F9000ECFCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCCEE875260F57F9000ECFCB /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		DC9BFA852615C8190057113F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		DC9BFA89261715F20057113F /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
 		DCCEE86E260F57F8000ECFCB /* Met someone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Met someone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCCEE871260F57F8000ECFCB /* Met_someoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Met_someoneApp.swift; sourceTree = "<group>"; };
 		DCCEE873260F57F8000ECFCB /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				DCCEE89A260FC21C000ECFCB /* AddView.swift */,
 				DC9BFA852615C8190057113F /* DetailView.swift */,
 				DCCEE88B260F8F28000ECFCB /* ImagePicker.swift */,
+				DC9BFA89261715F20057113F /* LocationFetcher.swift */,
 				DCCEE875260F57F9000ECFCB /* Assets.xcassets */,
 				DCCEE87A260F57F9000ECFCB /* Info.plist */,
 				DCCEE877260F57F9000ECFCB /* Preview Content */,
@@ -155,6 +158,7 @@
 			files = (
 				DCCEE887260F8858000ECFCB /* PersonStore.swift in Sources */,
 				DCCEE884260F87FA000ECFCB /* Person.swift in Sources */,
+				DC9BFA8A261715F20057113F /* LocationFetcher.swift in Sources */,
 				DCCEE89B260FC21C000ECFCB /* AddView.swift in Sources */,
 				DC9BFA862615C8190057113F /* DetailView.swift in Sources */,
 				DCCEE88C260F8F28000ECFCB /* ImagePicker.swift in Sources */,
